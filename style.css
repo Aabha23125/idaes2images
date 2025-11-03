@@ -8,7 +8,7 @@
 :root               {--red: #E02426;
                     --black: black;
                     --white:#ffff;
-                    --heading:'Pacifico', cursive;
+                    --heading:Arial, Helvetica, sans-serif;
                     --para: 'Quicksand', sans-serif;}
 
 .navbar             {width: 100%;
@@ -184,7 +184,7 @@ header      {width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 30px;
   color: var(--red);
   font-family: var(--heading);
   margin-bottom: 2rem;
@@ -220,7 +220,7 @@ header      {width: 100%;
 
 .product img {
   width: 100%;
-  height: 400px;
+  height: 300px;
   border-radius: 10px;
   margin-bottom: 1rem;
   transition: transform 0.3s;
@@ -263,7 +263,7 @@ header      {width: 100%;
 
 .trust_txt h1     {width: 80%;
                   height: 80px;
-                  font-size: 30px;
+                  font-size: 25px;
                   color: var(--red);
                   font-family: var(--heading);}
 
@@ -331,7 +331,7 @@ header      {width: 100%;
                       align-items: center;
                       color: var(--red);
                       font-family: var(--heading);
-                      font-size: 35px;}
+                      font-size: 30px;}
 
 
 
@@ -355,14 +355,13 @@ header      {width: 100%;
                       height: 100px;
                       padding: 3% 5%;
                       color: var(--red);
-                      font-size: 35px;
+                      font-size: 25px;
                       font-family: var(--heading);}
 
 .show_txt             {width: 100%;
                       height: 500px;
                       color: var(--black);
-                      display: flex;
-                      flex-direction: row;}
+                    display: flex;}
 
 .show_img             {width: 50%;
                       height: 500px;
@@ -371,17 +370,17 @@ header      {width: 100%;
                       align-items: center;}
 
 .show_img1              {width: 100%;
-                        height: 400px;
+                        height: 300px;
                         display: grid;
                         grid-template-columns: 1fr 1fr;
-                        grid-template-rows: 1fr 1fr;
+                        grid-template-rows: 1fr;
                         justify-items: center;
                         gap: 20px;
                         align-items: center;
                         padding: 0 10%;}
 
-.show_img1 img          {width: 220px;
-                      height: 160px;
+.show_img img          {width: 250px;
+                      height: 200px;
                       border-radius: 10px;
                       transform: scale(1);
                       transition: all 300ms ease-in-out;}
@@ -389,17 +388,17 @@ header      {width: 100%;
 .show_img img:hover   {transform: scale(1.1);}
 
 .show_img p           {width: 80%;
-                      height: 200px;
+                      height: 150px;
                       padding: 5% 0%;
                       color: var(--black);
-                      font-size: 18px;
+                      font-size: 20px;
                       font-family: var(--para);}
 
 .show_img h2            {width: 80%;
                         height: 60px;
                         padding: 3% 0%;
                         color: var(--red);
-                        font-size: 30px;
+                        font-size: 25px;
                         font-family: var(--heading);}
 
 .choose                 {width: 100%;
@@ -415,7 +414,7 @@ header      {width: 100%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-size: 40px;
+                        font-size: 30px;
                         font-family: var(--heading);}
 
 .choose p               {width: 80%;
@@ -502,7 +501,7 @@ header      {width: 100%;
                         height: 100px;
                         font-family: var(--heading);
                         color: var(--red);
-                        font-size: 35px;}
+                        font-size: 25px;}
 
 .apart_txt p            {width: 80%;
                         height: 200px;
@@ -536,7 +535,7 @@ header      {width: 100%;
 
 .we h1                  {width: 80%;
                         height: 70px;
-                        font-size: 45px;
+                        font-size: 35px;
                         color: var(--red);
                         font-family: var(--heading);}
 
@@ -558,7 +557,7 @@ header      {width: 100%;
 
 .ob h1                  {width: 80%;
                         height: 70px;
-                        font-size: 45px;
+                        font-size: 35px;
                         color: var(--red);
                         font-family: var(--heading);}
 
@@ -580,7 +579,7 @@ header      {width: 100%;
 
 .goals h1                  {width: 80%;
                         height: 70px;
-                        font-size: 45px;
+                        font-size: 35px;
                         color: var(--red);
                         font-family: var(--heading);}
 
