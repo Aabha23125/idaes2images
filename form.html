@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    :root               {--red: #E02426;
+                    --black: black;
+                    --white:#ffff;
+                    --heading:'Pacifico', cursive;
+                    --para: 'Quicksand', sans-serif;}
+
+    .form         {width: 100%;
+                  height: 900px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;}
+
+    .contact-container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info {
+      flex: 1 1 250px;
+    }
+
+    .contact-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .contact-info p {
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .contact-form {
+      flex: 1 1 400px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form label {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+      transition: border-color 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background: var(--red);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: var(--black);
+    }
+
+    @media (max-width: 768px) {
+      
+      .contact-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info h2 {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="icon"><a href="https://wa.me/9810118782"><i class="fa-brands fa-square-whatsapp"></i></a></div>
+    <!-- Header / Navigation -->
+  <section class="navbar">
+          <section class="logo"><img src="img/logo (3).png" alt=""></section>
+          <button class="hamburger" id="hamburger">&#9776;</button>
+          <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>  
+            <div class="dropdown">
+                <button class="dropbtn"><a href="#">Products</a> 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="corporategifts.html">Corporate Gifts</a>
+                  <a href="brochure.html">Brochure</a>
+                  <a href="offsetprinting.html">Offset Printing</a>
+                  <a href="leaflet.html">⁠Leaflets</a>
+                  <a href="icard.html">I cards & Lanyard</a>
+                  <a href="catalog.html">⁠Catalogs</a>
+                  <a href="jute.html">Jute Bag Printing</a>
+                  <a href="rigid.html">Rigid Box Printing</a>
+                  <a href="leatherandresin.html">⁠Leather & Rexin Bags & Folders</a>
+                  <a href="paperbag.html">Paper Bags</a>
+                </div>
+              </div> 
+            <a href="form.html"><span>Contact Us</span></a>
+            
+          </nav>
+        </section>
+<div class="form">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Fill out the form or reach us through the following details:</p>
+      <p><strong>Address:</strong> B-68/1B, 2nd Floor, Naraina Industrial Area, Phase 2, New Delhi- 110028</p>
+      <p><strong>Phone:</strong> +91 9810118782</p>
+      <p><strong>Email:</strong> ideas2images@gmail.com</p>
+    </div>
+
+    <div class="contact-form">
+      
+      
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Ideas2Images</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="corporategifts.html">Product</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="corporategifts.html">Corporate Gifts</a></li>
+          <li><a href="brochure.html">brochure</a></li>
+          <li><a href="offsetprinting.html">Offset Printing</a></li>
+          <li><a href="leaflet.html">⁠Leaflets</a></li>
+          <li><a href="icard.html">I cards & Lanyard</a></li>
+          <li><a href="catalog.html">⁠Catalogs</a></li>
+          <li><a href="jute.html">Jute Bag Printing</a></li>
+          <li><a href="rigid.html">Rigid Box Printing</a></li>
+          <li><a href="leatherandresin.html">⁠Leather & Rexin Bags & Folders</a></li>
+          <li><a href="paperbag.html">Paper Bags</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="form.html">Contact Us</a></li>
+          <li><a href="#">Request a Quote</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Email Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Ideas2Images designed by <br>Promopact Marketing Pvt. Ltd. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

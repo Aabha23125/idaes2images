@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Corporate Gifts</title>
+</head>
+<style>
+    *{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    :root               {--red: #E02426;
+                    --black: black;
+                    --white:#ffff;
+                    --heading:'Pacifico', cursive;
+                    --para: 'Quicksand', sans-serif;}
+
+
+    .mean               {width: 100%;
+                        height: 600px;
+                        background-image: url("img/1.png");
+                        background-size: 100% 120%;}
+
+    .importance         {width: 100%;
+                        height: 500px;
+                        display: flex;
+                        justify-content: space-evenly;
+                    align-items: center;}
+
+    .imp_box1           {width: 45%;
+                        height: 400px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;}
+
+    .imp_title          {width: 80%;
+                        height: 100px;
+                        font-size: 50px;
+                        padding-left: 4%;
+                        display: flex;
+                        align-items: center;
+                        font-family: var(--heading);
+                        font-weight: 700;
+                        border-left: 6px solid var(--red);}
+
+    .imp_para           {width: 80%;
+                        height: 150px;
+                        font-size: 20px;
+                        font-family: var(--para);}
+
+    .quality           {width: 35%;
+                        height: 400px;
+                        border-radius: 15px;
+                        box-shadow: 0 10px 20px var(--black);
+                        padding: 2%;}
+
+    .quality_title      {width: 90%;
+                        height: 80px;
+                        font-size: 25px;
+                        color: var(--red);
+                        display: flex;
+                        align-items: center;
+                        font-family: var(--heading);
+                        font-weight: 700;}
+
+    .quality_para       {width: 95%;
+                        height: 150px;
+                        font-size: 18px;
+                        font-family: var(--para);}
+
+    .impact             {width: 100%;
+                        height: 700px;
+                        }
+
+    .impact_txt         {width: 100%;
+                        height: 300px;
+                        padding-left: 4%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;}
+
+    .impact_title          {width: 90%;
+                        height: 80px;
+                        font-size: 50px;
+                        padding-left: 4%;
+                        display: flex;
+                        align-items: center;
+                        font-family: var(--heading);
+                        font-weight: 700;
+                        border-left: 6px solid var(--red);}
+
+    .impact_para           {width: 70%;
+                        height: 100px;
+                        font-size: 20px;
+                        font-family: var(--para);
+                        }
+
+    .impact_txt1         {width: 100%;
+                        height: 400px;
+                        padding-left: 4%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;}
+
+    .impact_points      {width: 40%;
+                        height: 400px;
+                        padding-left: 2%;}
+                        
+    .pnts_title       {width: 100%;
+                        height: 80px;
+                        font-size: 35px;
+                        font-family: var(--heading);}
+
+    .imp_pnt            {width: 100%;
+                        height: 50px;
+                        font-size: 20px;
+                        font-family: var(--para);}
+
+    .fa-check           {color: var(--red);}
+
+    .apart              {width: 100%;
+                        height: 400px;
+                        background: var(--black);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: center;}
+
+    .apart_title        {width: 80%;
+                        height: 80px;
+                        font-size: 35px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 2%;
+                        color: var(--white);
+                        font-family: var(--heading);
+                        border-left: 6px solid var(--red);}
+
+    .apart_txt         {width: 80%;
+                        height: 150px;
+                        font-size: 20px;
+                        color: var(--white);
+                        font-family: var(--para);}
+
+    .impression         {width: 100%;
+                        height: 300px;
+                        background: var(--black);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: center;}
+
+    .impres_title       {width: 90%;
+                        height: 80px;
+                        color: var(--white);
+                        font-size: 40px;
+                        padding-left: 2%;
+                        display: flex;
+                        align-items: center;
+                        font-family: var(--heading);
+                        border-left: 5px solid var(--red);}
+
+    .impres_para        {width: 90%;
+                        height: 100px;
+                        color: var(--white);
+                        font-family: var(--para);}
+
+    #connect            {width: 100%;
+                        height: 400px;
+                        background: var(--red);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;}
+
+    .cta-title          {width: 90%;
+                        height: 100px;
+                        font-size: 50px;
+                        color: var(--white);
+                        font-family: var(--heading);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;}
+
+    .cta-subtitle       {width: 90%;
+                        height: 150px;
+                        font-size: 20px;
+                        color: var(--white);
+                        font-family: var(--para);
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;}
+
+    .cta-button         {width: 30%;
+                        height: 60px;
+                        background: var(--black);
+                        border-radius: 50px;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        cursor: pointer;
+                        align-items: center;
+                        text-decoration: none;
+                        color: var(--white);
+                        font-family: var(--heading);}
+
+    .icon               {width: 50px;
+                        height: 50px;
+                        background: var(--white);
+                        border: 2px solid green;
+                        position: fixed;
+                        bottom: 50px;
+                        right: 50px;
+                        color: green;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;}
+
+        .icon a         {text-decoration: none;
+                        color: green;}
+
+    .fa-square-whatsapp {font-size: 40px;}
+</style>
+<body>
+
+    <div class="icon"><a href="https://wa.me/9810118782"><i class="fa-brands fa-square-whatsapp"></i></a></div>
+    <!-- Header / Navigation -->
+  <section class="navbar">
+          <section class="logo"><img src="img/logo (3).png" alt=""></section>
+          <button class="hamburger" id="hamburger">&#9776;</button>
+          <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>  
+            <div class="dropdown">
+                <button class="dropbtn"><a href="#"><span>Products</span></a> 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="corporategifts.html">Corporate Gifts</a>
+                  <a href="brochure.html">Brochure</a>
+                  <a href="offsetprinting.html">Offset Printing</a>
+                  <a href="leaflet.html">⁠Leaflets</a>
+                  <a href="icard.html">I cards & Lanyard</a>
+                  <a href="catalog.html">⁠Catalogs</a>
+                  <a href="jute.html">Jute Bag Printing</a>
+                  <a href="rigid.html">Rigid Box Printing</a>
+                  <a href="leatherandresin.html">⁠Leather & Rexin Bags & Folders</a>
+                  <a href="paperbag.html">Paper Bags</a>
+                </div>
+              </div> 
+            <a href="form.html">Contact Us</a>
+            
+          </nav>
+        </section>
+    <section class="mean">
+        
+    </section>
+
+    <section class="importance">
+        <div class="imp_box1">
+            <div class="imp_title">
+                The Importance of <br>Corporate Gifting
+            </div>
+            <div class="imp_para">
+                Impact is the main goal of corporate gifts, not formality. Gifts demonstrate that your brand values people, whether it's for an occasion, a milestone, or employee appreciation. They are, therefore, instruments of engagement rather than merely accessories. These gestures will be effective if you choose the <b>best corporate gift printers in India</b>.
+            </div>
+        </div>
+        <div class="quality">
+            <div class="quality_title">
+                Quality You Can Always Rely On
+            </div>
+            <div class="quality_para">
+                Every business gift you give reflects your brand. For this reason, we never skimp on design accuracy, materials, or finishing. Our guiding principle is consistency; all projects, regardless of size, should receive the same level of care. We are the  leading corporate gift printers in India because of our dependability.
+            </div>
+        </div>
+    </section>
+
+    <section id="connect">
+            <h2 class="cta-title">
+                Are You All Set to Connect?
+            </h2>
+            <p class="cta-subtitle">
+                Are you looking for a partner who appreciates both deadlines and creativity? You've located us. Our goal at Ideas 2 Images is to use meaningful gifts to help you build stronger relationships. We create outcomes that accurately reflect your brand by combining design, quality, and personalization. Get in touch with us now, and together, let's create meaningful gifting experiences. Your brand will always be noticed when you work with the best corporate gift printers in India.
+            </p>
+            <a href="#" class="cta-button">
+                ENQUIRE FOR ORDER
+            </a>
+        </div>
+    </section>
+
+    <section class="impact">
+        <div class="impact_txt">
+            <div class="impact_title">
+                Customization That Makes a Big Impact
+            </div>
+            <div class="impact_para">
+                We provide countless options to showcase your brand's personality, from personalized printing to packaging. Today's businesses are looking for gifts that are both useful and unique, and we provide just that. It should come as no surprise that we are ranked as one of the <b>best corporate gift printers in India</b>.
+            </div>
+        </div>
+        <div class="impact_txt1">
+            <div class="impact_points">
+                <div class="pnts_title">
+                    Options to consider:
+                </div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Brand colors and logos that stand out</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Printed or engraved messages</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Festive and seasonal themes</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;A large selection of presents</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Tailored designs for events</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Quality You Can Always Rely On</div>
+            </div>
+            <div class="impact_img"></div>
+        </div>
+    </section>
+
+    <section class="apart">
+        <div class="apart_title">
+            What Sets Us Apart in the Sector
+        </div>
+        <div class="apart_txt">
+            What makes us unique is that we create gifts that make an impression rather than merely providing them. We are a reliable partner because of our unique blend of innovation, technology, and on-time delivery. We add innovation to every order, while others stick to the fundamentals. Our in-house printing and design skills ensure accuracy and save you time. Because of this, businesses consider us to be one of the best corporate gift printers in India.
+        </div>
+    </section>
+
+    <section class="impact">
+        <div class="impact_txt">
+            <div class="impact_title">
+                Who We Collaborate With
+            </div>
+            <div class="impact_para">
+                We develop solutions for companies in all sectors and sizes. While startups turn to us for innovative ideas that fit limited budgets, corporates rely on us for bulk gifting. We are trusted by organizations and event planners to elevate their events. Because of our prompt delivery and customizable options, agencies and resellers choose us. That is the reason we are regarded as one of the best corporate gift printers in India.
+            </div>
+        </div>
+        <div class="impact_txt1">
+            <div class="impact_points">
+                <div class="pnts_title">
+                    Among our clients are:
+                </div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Big businesses and corporations</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Startups and small enterprises</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Institutions, schools, and colleges</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Managers and planners of events</div>
+                <div class="imp_pnt"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Reselling companies and marketing firms</div>
+            </div>
+            <div class="impact_img"></div>
+        </div>
+    </section>
+
+    <section class="impression">
+        <div class="impres_title">
+            Packaging That Makes an Impression
+        </div>
+        <div class="impres_para">
+            Packaging is more than just wrapping; it's how your gift is perceived right away. We make certain that each package reflects your brand and looks polished and professional. We can create packaging in a variety of styles to fit the occasion, from elegant to simple. Gifts that are presented well are remembered, not just noticed. You should anticipate that level of detail from the top corporate gift printers in India.
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Ideas2Images</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="corporategifts.html">Product</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="corporategifts.html">Corporate Gifts</a></li>
+          <li><a href="brochure.html">brochure</a></li>
+          <li><a href="offsetprinting.html">Offset Printing</a></li>
+          <li><a href="leaflet.html">⁠Leaflets</a></li>
+          <li><a href="icard.html">I cards & Lanyard</a></li>
+          <li><a href="catalog.html">⁠Catalogs</a></li>
+          <li><a href="jute.html">Jute Bag Printing</a></li>
+          <li><a href="rigid.html">Rigid Box Printing</a></li>
+          <li><a href="leatherandresin.html">⁠Leather & Rexin Bags & Folders</a></li>
+          <li><a href="paperbag.html">Paper Bags</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="form.html">Contact Us</a></li>
+          <li><a href="#">Request a Quote</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Email Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Ideas2Images designed by <br>Promopact Marketing Pvt. Ltd. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
